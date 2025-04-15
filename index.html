@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+<button class="toggle-theme" onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+<div class="quiz-box">
+  <div class="timer" id="timer">Time left: 60s</div>
+  <h3 id="question"></h3>
+  <form>
+    <label><input type="radio" name="answer" value="0" id="opt0"> <span id="text0"></span></label>
+    <label><input type="radio" name="answer" value="1" id="opt1"> <span id="text1"></span></label>
+    <label><input type="radio" name="answer" value="2" id="opt2"> <span id="text2"></span></label>
+    <label><input type="radio" name="answer" value="3" id="opt3"> <span id="text3"></span></label><br>
+    <button type="button" onclick="nextQuestion()">Next</button>
+  </form>
+  <p id="progress">Attempted: 0 / 13</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
